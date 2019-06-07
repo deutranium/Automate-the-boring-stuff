@@ -7,7 +7,7 @@ function automateStuff(){
 
 function copyFunc(){
 
-	let copyText = `                           *     .--.
+	let copyText = `                         *     .--.
                               / /  \`
              +               | |
                     '         \\ \\__,
