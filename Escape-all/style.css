@@ -1,0 +1,32 @@
+body{
+	padding:20px 0;
+	font-family: 'Arial', sans-serif;
+}
+
+div, h1{
+	text-align: center;
+}
+
+.container{
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container > div{
+	margin: 0 5px;
+}
+
+code{
+	background-color: #d9d9d9;
+	padding: 1px 3px;
+	margin: 0 2px;
+}
+
+
+@media only screen and (max-width: 800px){
+	.container{
+		flex-direction: column;
+	}
+}
