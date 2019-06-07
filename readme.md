@@ -6,4 +6,4 @@ P.S. To save some brainpower, I haven't thought much about the UI of any of thes
 
 P.S. again : Its always a work in progress
 
-- [Escape-all](https://github.com/deutranium/Automate-the-boring-stuff/Escape-all) : Escape `\`, `` ` ``, `:`, `'`, and `"` from a given text using backslash.
+- [Escape-all](https://deutranium.github.io/Automate-the-boring-stuff/Escape-all/) : Escape `\`, `` ` ``, `:`, `'`, and `"` from a given text using backslash.
