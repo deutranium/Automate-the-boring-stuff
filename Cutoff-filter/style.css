@@ -1,0 +1,18 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+form > *{
+	margin: 5px;
+}
+
+table{
+	margin-top: 5vh;
+}
+
+
+table, td, th{
+	border: solid 2px #444;
+	border-collapse: collapse;
+	padding: 5px 10px;
+}
