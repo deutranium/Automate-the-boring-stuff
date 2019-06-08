@@ -39,7 +39,7 @@ function threeTwoOneGo(){
 							//return;
 						}
 					}
-					if(branchGood && (thisData[4] == "OPEN") && (thisData[5].toLowerCase().indexOf(seatPool.toLowerCase()) != -1) && (thisData[1].toLowerCase().indexOf(name.toLowerCase()) != -1) && (thisData[7] >= rank) && (thisData[7] <= cRank)){
+					if(branchGood && ((thisData[3] == "OS") || (thisData[3] == "AI")) && (thisData[4] == "OPEN") && (thisData[5].toLowerCase().indexOf(seatPool.toLowerCase()) != -1) && (thisData[1].toLowerCase().indexOf(name.toLowerCase()) != -1) && (thisData[7] >= rank) && (thisData[7] <= cRank)){
 						$("tbody").append("<tr><td>" + thisData[1] + "</td><td>" + thisData[2] + "</td><td>" + thisData[5] + "</td><td>" + thisData[6] + "</td><td>" + thisData[7] + "</td></tr>");
 					}
 			}

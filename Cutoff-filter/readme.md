@@ -1,5 +1,7 @@
 # Filter [JoSAA](https://josaa.nic.in) Round 7 cutoffs for 2018
 
+Note: For General category, without any State quota
+
 ### How to:
 
 **College name** : Enter the complete word which occurs at least once in the name of the college. Example : "IIT" won't match anything, but "Indian" will. 
