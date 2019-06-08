@@ -8,8 +8,8 @@
 
 **Seat Pool** : Enter "F" for female only, "G" for Gender Neutral, or leave blank for both.
 
-**Opening Rank** : Colleges with Opening ranks greater than or equal to the number entered here will be matched.
+**Includes Rank** : Matches colleges whose cutoffs allow admission to the student with this rank.
 
-**Closing Rank** : Colleges with Closing ranks lesser than or equal to the number entered here will be matched.
+**Closing Rank** : The upper limit to the closing ranks.
 
-*Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome, or /</<Insert text here after Googling/>/> for other browsers to view the console.*
+*Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome, or `<Insert text here after Googling>` for other browsers to view the console.*

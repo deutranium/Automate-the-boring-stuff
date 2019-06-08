@@ -6,10 +6,10 @@ function threeTwoOneGo(){
 	let branch = $("input:nth-of-type(2)").val().split(","); // Name of branch
 	let branchLength = branch.length;
 	let seatPool = $("input:nth-of-type(3)").val();
-	let oRank = 0;	//The default value
-	if($("input:nth-of-type(4)").val() != "") oRank = parseInt($("input:nth-of-type(4)").val());	// Value form text field if any
-	let cRank = Infinity;	//The default value
-	if($("input:nth-of-type(5)").val() != "") cRank = parseInt($("input:nth-of-type(5)").val());	// Value from text field if any
+	let rank = 0;	//The default value
+	if($("input:nth-of-type(4)").val() != "") rank = parseInt($("input:nth-of-type(4)").val());	// Value form text field if any
+	let cRank = Infinity;
+	if($("input:nth-of-type(5)").val() != "") cRank = parseInt($("input:nth-of-type(5)").val());	// Value form text field if any
 
 	// * // * // * // * // * // * // * // * |||||||| * \\ * \\ * \\ * \\ * \\ * \\ * \\ * \\
 
@@ -39,7 +39,7 @@ function threeTwoOneGo(){
 							//return;
 						}
 					}
-					if(branchGood && (thisData[4] == "OPEN") && (thisData[5].toLowerCase().indexOf(seatPool.toLowerCase()) != -1) && (thisData[1].toLowerCase().indexOf(name.toLowerCase()) != -1) && (thisData[6] >= oRank) && (thisData[7] >= cRank)){
+					if(branchGood && (thisData[4] == "OPEN") && (thisData[5].toLowerCase().indexOf(seatPool.toLowerCase()) != -1) && (thisData[1].toLowerCase().indexOf(name.toLowerCase()) != -1) && (thisData[7] >= rank) && (thisData[7] <= cRank)){
 						$("tbody").append("<tr><td>" + thisData[1] + "</td><td>" + thisData[2] + "</td><td>" + thisData[5] + "</td><td>" + thisData[6] + "</td><td>" + thisData[7] + "</td></tr>");
 					}
 			}
@@ -50,5 +50,5 @@ function threeTwoOneGo(){
 }
 
 function howToUse(){
-	alert("To be used only to filter Round 7(2018) cutoffs given on official JoSAA website. \n \nCollege name : Enter the complete word which occurs at least once in the name of the college. Example : \"IIT\" won't match anything, but \"Indian\" will. \nBranch: Enter the complete word(or words separated by a comma), instead of abbreviations like CS, ECE etc. Example : \"computer\", \"ElEcTrIcAl\", \"Computer  ,     ElEcTriCal\" are valid.\nSeat Pool : Enter \"F\" for female only, \"G\" for Gender Neutral, or leave blank for both. \nOpening Rank : Colleges with Opening ranks greater than or equal to the number entered here will be matched. \nClosing Rank : Colleges with Closing ranks greater than or equal to the number entered here will be matched.\n\nTheir won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome, or <<Insert text here after Googling>> for other browsers to view the console.");
+	alert("To be used only to filter Round 7(2018) cutoffs given on official JoSAA website. \n \nCollege name : Enter the complete word which occurs at least once in the name of the college. Example : \"IIT\" won't match anything, but \"Indian\" will. \nBranch: Enter the complete word(or words separated by a comma), instead of abbreviations like CS, ECE etc. Example : \"computer\", \"ElEcTrIcAl\", \"Computer  ,     ElEcTriCal\" are valid.\nSeat Pool : Enter \"F\" for female only, \"G\" for Gender Neutral, or leave blank for both. \nIncludes Rank : Matches colleges whose cutoffs allow admission to the student with this rank. \nClosing Rank < \< : The upper limit to the closing ranks\n\nTheir won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome, or <<Insert text here after Googling>> for other browsers to view the console.");
 }
