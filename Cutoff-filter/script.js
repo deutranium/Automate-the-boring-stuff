@@ -2,7 +2,8 @@ function threeTwoOneGo(){
 
 	$("tbody").html("<tr><th>Name</th><th>Branch</th><th>Seat Pool</th><th>Opening Rank</th><th>Closing Rank</th></tr>");
 
-	let name = $("input:nth-of-type(1)").val(); 				// Name of college
+	let name = $("input:nth-of-type(1)").val().split(",");		// Name of college
+	let nameLength = name.length;
 	let branch = $("input:nth-of-type(2)").val().split(","); 	// Name of branch(es)
 	let branchLength = branch.length;							// Number of branches
 	let seatPool = $("input:nth-of-type(3)").val();				// Female only or Gender Neutral
@@ -22,14 +23,24 @@ function threeTwoOneGo(){
 			for(let k = 1; k < data.pageTables[i].tables.length; k++){ // to loop over each row in a page
 				let thisData = data.pageTables[i].tables[k];
 				let branchGood = false;
+				let collegeGood = false;
 				for(let j = 0; j < branchLength; j++){
 					if(thisData[2].toLowerCase().indexOf(branch[j].trim().toLowerCase()) != -1){
 						branchGood = true;
 					}
 				}
-				if(branchGood && ((thisData[3] == "OS") || (thisData[3] == "AI")) && (thisData[4] == "OPEN") && (thisData[5].toLowerCase().indexOf(seatPool.toLowerCase()) != -1) && (thisData[1].toLowerCase().indexOf(name.toLowerCase()) != -1) && (thisData[7] >= rank) && (thisData[7] <= cRank)){
-					$("tbody").append("<tr><td>" + thisData[1] + "</td><td>" + thisData[2] + "</td><td>" + thisData[5] + "</td><td>" + thisData[6] + "</td><td>" + thisData[7] + "</td></tr>");
-					//detailsArr.push([thisData[1], thisData[2], thisData[5], thisData[6], thisData[7]]);
+
+
+				for(let j = 0; j < nameLength; j++){
+					console.log(name);
+					if(thisData[1].toLowerCase().indexOf(name[j].trim().toLowerCase()) != -1){
+						collegeGood = true;
+					}
+				}
+
+
+				if(branchGood && ((thisData[3] == "OS") || (thisData[3] == "AI")) && (thisData[4] == "OPEN") && (thisData[5].toLowerCase().indexOf(seatPool.toLowerCase()) != -1) && collegeGood && (thisData[7] >= rank) && (thisData[7] <= cRank)){
+					detailsArr.push([thisData[1], thisData[2], thisData[5], thisData[6], thisData[7]]);
 				}
 			}
 
@@ -37,9 +48,14 @@ function threeTwoOneGo(){
 
 
 
-		/*if($(".chkbx").checked){
-			alert("Yayayayayayayayayayayayay");
-		}*/
+		if(document.getElementById("chkbx").checked){
+			detailsArr.sort((a,b) => a[4] - b[4]);
+			console.log(detailsArr);
+		}
+
+		for(let i = 0; i < detailsArr.length; i++){
+			$("tbody").append("<tr><td>" + detailsArr[i][0] + "</td><td>" + detailsArr[i][1] + "</td><td>" + detailsArr[i][2] + "</td><td>" + detailsArr[i][3] + "</td><td>" + detailsArr[i][4] + "</td></tr>");
+		}
 	});
 
 }
