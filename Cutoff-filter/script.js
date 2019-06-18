@@ -32,7 +32,6 @@ function threeTwoOneGo(){
 
 
 				for(let j = 0; j < nameLength; j++){
-					console.log(name);
 					if(thisData[1].toLowerCase().indexOf(name[j].trim().toLowerCase()) != -1){
 						collegeGood = true;
 					}
@@ -50,7 +49,6 @@ function threeTwoOneGo(){
 
 		if(document.getElementById("chkbx").checked){
 			detailsArr.sort((a,b) => a[4] - b[4]);
-			console.log(detailsArr);
 		}
 
 		for(let i = 0; i < detailsArr.length; i++){
@@ -78,7 +76,7 @@ function threeTwoOneGo(){
 function howToUse(){
 	alert(`To be used only to filter Round 7(2018) cutoffs given on official JoSAA website.
 
-College name : Enter the complete word which occurs at least once in the name of the college. Example : \"IIT\" won't match anything, but \"Indian\" will.
+College name : Enter the complete word(or words separated by a comma), which occurs at least once in the name of the college. Example : \"IIT\" won't match anything, but \"Indian\" or \"Bombay, Delhi\" will.
 Branch: Enter the complete word(or words separated by a comma), instead of abbreviations like CS, ECE etc. Example : \"computer\", \"ElEcTrIcAl\", \"Computer  ,     ElEcTriCal\" are valid.
 Seat Pool : Enter \"F\" for Female only, \"G\" for Gender Neutral, or leave blank for both.
 Includes Rank : Matches colleges whose cutoffs allow admission to the student with this rank.
@@ -106,7 +104,3 @@ function getTable(){
 
 getTable();
 */
-
-function sortByClosingRanks(){
-
-}
