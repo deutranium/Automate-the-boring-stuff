@@ -1,3 +1,12 @@
+
+document.querySelectorAll(".inputBox").forEach(el => el.addEventListener(("keyup"), function(e){
+	if(event.keyCode === 13){
+		event.preventDefault();
+		document.getElementById("submitBtn").click();
+	}
+}));
+
+
 function threeTwoOneGo(){
 
 	$("tbody").html("<tr><th>Name</th><th>Branch</th><th>Seat Pool</th><th>Opening Rank</th><th>Closing Rank</th></tr>");
