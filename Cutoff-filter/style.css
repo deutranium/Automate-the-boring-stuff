@@ -41,6 +41,7 @@ table, td, th{
 }
 
 input{
+	padding: 3px;
 	border-style: none none solid none;
 	border-color: #777;
 	border-width: 1px;
@@ -48,7 +49,7 @@ input{
 }
 
 input:focus{
-	outline: 2px solid orange;
+	outline: 1px solid navy;
 	border-color: transparent;
 }
 
