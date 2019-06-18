@@ -1,5 +1,7 @@
 # Filter [JoSAA](https://josaa.nic.in) Round 7 cutoffs for 2018
 
+Live : [here](https://deutranium.github.io/Automate-the-boring-stuff/Cutoff-filter/)
+
 Note: For General category, without any State quota
 
 ### How to:
@@ -14,4 +16,4 @@ Note: For General category, without any State quota
 
 **Closing Rank** : The upper limit to the closing ranks.
 
-*Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> for Chrome, or `<Insert text here after Googling>` for other browsers to view the console.*
+*Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> for Chrome or :fire: fox, or `<Insert text here after Googling>` for other browsers to view the console.*

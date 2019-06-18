@@ -27,7 +27,8 @@ function copyFunc(){
          _.-'\`\`                    \`\`'-._
        -'                                '-
 
-          Obviously I haven't made this ;P`;
+          Obviously I haven't made this ;P
+Taken from http://www.ascii-art.de/ascii/pqr/rockets.txt`;
 
 	let textArea = document.createElement("textArea");
   textArea.style.cssText = 'position: fixed; top: 0; left: 0; width: 2em; height: 2em; padding: 0; border: none; outline: none; boxShadow: none; background: transparent';
