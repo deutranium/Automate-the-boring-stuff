@@ -91,7 +91,7 @@ Seat Pool : Enter \"F\" for Female only, \"G\" for Gender Neutral, or leave blan
 Includes Rank : Matches colleges whose cutoffs allow admission to the student with this rank.
 Closing Rank < : The upper limit to the closing ranks
 
-Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome, or <<Insert text here after Googling>> for other browsers to view the console.`);
+Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome and 🔥🦊, or <<Insert text here after Googling>> for other browsers to view the console.`);
 }
 
 
