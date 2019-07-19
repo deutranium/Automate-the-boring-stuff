@@ -93,23 +93,3 @@ Closing Rank < : The upper limit to the closing ranks
 
 Their won't be any errors (if any) displayed on the webpage itself in case you're trying to mess up with the criteria. Use Ctrl + Shift + I for Chrome and 🔥🦊, or <<Insert text here after Googling>> for other browsers to view the console.`);
 }
-
-
-/*	Trying some node and npm
-function getTable(){
-	let pdf_table_extractor = require('pdf-table-extractor');
-
-	function success(result){
-		console.log(JSON.stringify(result));
-	}
-
-	function error(e){
-		console.error(e);
-	}
-
-	pdf_table_extractor("round7.pdf", success, error);
-}
-
-
-getTable();
-*/
